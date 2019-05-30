@@ -1,0 +1,49 @@
+{
+  "name": "weixinbot",
+  "version": "0.6.1",
+  "description": "Robot for Wechat personal chat",
+  "main": "./lib/weixinbot.js",
+  "scripts": {
+    "compile": "babel --plugins \"transform-runtime\" ./src --ignore __test__ --out-dir ./lib",
+    "prepublish": "rimraf ./lib && npm run compile",
+    "test": "mocha $npm_package_options_mocha",
+    "test-watch": "npm run test -- --watch",
+    "dev":"supervisor ./examples/bot.js"
+  },
+  "options": {
+    "mocha": "--require scripts/mocha_runner src/**/__test__/**/*.js"
+  },
+  "author": "feit",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.2",
+    "bluebird": "^3.3.3",
+    "debug": "^2.2.0",
+    "nedb": "^1.8.0",
+    "node-axios-cookiejar": "0.0.3",
+    "nodemailer": "^2.2.1",
+    "qrcode-terminal": "^0.10.0",
+    "touch": "^1.0.0",
+    "tough-cookie": "^2.3.2",
+    "tough-cookie-filestore": "0.0.1"
+  },
+  "devDependencies": {
+    "async-to-gen": "^1.1.3",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^4.1.6",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-2": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0",
+    "mocha": "^2.4.5",
+    "nock": "^7.0.2",
+    "reify": "^0.3.6",
+    "request": "^2.88.0",
+    "rimraf": "^2.5.4"
+  }
+}
