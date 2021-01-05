@@ -16,7 +16,7 @@
   "author": "feit",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.15.2",
+    "axios": "^0.21.1",
     "bluebird": "^3.3.3",
     "debug": "^2.2.0",
     "nedb": "^1.8.0",
