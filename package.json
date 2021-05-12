@@ -21,7 +21,7 @@
     "debug": "^2.2.0",
     "nedb": "^1.8.0",
     "node-axios-cookiejar": "0.0.3",
-    "nodemailer": "^2.2.1",
+    "nodemailer": "^6.4.16",
     "qrcode-terminal": "^0.10.0",
     "touch": "^1.0.0",
     "tough-cookie": "^2.3.2",
